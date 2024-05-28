@@ -40,8 +40,8 @@ test("test 8/10-11", async ({ page }) => {
     .locator("#box-widget_InitialProductSelection")
     .selectOption("Yosemite Valley Lodge");
   await page.locator("#box-widget_Adults").selectOption("3");
-  await page.locator("#box-widget_ArrivalDate").fill("11/10/2024");
-  await page.locator("#box-widget_DepartureDate").fill("11/11/2024");
+  await page.locator("#box-widget_ArrivalDate").fill("08/10/2024");
+  await page.locator("#box-widget_DepartureDate").fill("08/11/2024");
   await page.getByRole("button", { name: "Check Availability" }).click();
   await expect(
     page.getByRole("heading", { level: 3, name: "YOUR SEARCH:" })
